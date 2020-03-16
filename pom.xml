@@ -8,5 +8,7 @@
     <artifactId>springboot-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
+    <modules>
+        <module>springboot-config</module>
+    </modules>
 </project>

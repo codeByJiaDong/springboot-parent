@@ -1,0 +1,9 @@
+## demo 书信息
+demo:
+  book:
+    name: 'java入门到放弃'
+    writer: '嘉栋'
+
+
+server:
+  port: 9000
