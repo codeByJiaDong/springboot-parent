@@ -1,0 +1,26 @@
+
+## 是否显示SQL 语句
+spring:
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+    open-in-view: false
+  ## Data WEB 相关配置
+  data:
+    web:
+      pageable:
+        ## 分页大小默认为20
+        default-page-size: 3
+        ## 当前页的参数名 默认 page
+        page-parameter: pageNum
+        ## 当前页大小参数名 默认 size
+        size-parameter: pageSize
+        ## 字段排序
+      ## 字段排序 参数名 默认 为sort
+      sort:
+        sort-parameter: orderBy
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/test?serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver

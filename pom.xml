@@ -10,5 +10,6 @@
 
     <modules>
         <module>springboot-config</module>
+        <module>spring-boot-core-book-demo</module>
     </modules>
 </project>
