@@ -3,7 +3,6 @@ demo:
   book:
     name: 'java入门到放弃'
     writer: '嘉栋'
-
-
+    description: ${demo.book.writer}'s${demo.book.name}
 server:
   port: 9000

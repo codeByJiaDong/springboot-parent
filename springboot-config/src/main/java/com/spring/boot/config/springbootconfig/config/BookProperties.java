@@ -1,7 +1,12 @@
 package com.spring.boot.config.springbootconfig.config;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
+
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 /**
  * @Description TODO
@@ -9,19 +14,23 @@ import org.springframework.stereotype.Component;
  * @auther by Dong
  */
 @Component
+@ConfigurationProperties(prefix = "demo.book")
+@Validated
 public class BookProperties {
 
     /**
      * 书名
      */
-    @Value("${demo.book.name}")
+    //@Value("${demo.book.name}")
+    @NotNull
     private String name;
 
 
     /**
      * 作者
      */
-    @Value("${demo.book.writer}")
+    @NotEmpty
+    //@Value("${demo.book.writer}")
     private String writer;
 
     public String getName() {

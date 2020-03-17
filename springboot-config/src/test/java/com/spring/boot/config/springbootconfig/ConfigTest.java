@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @auther by Dong
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest("com.spring.boot.config.springbootconfg")
+@SpringBootTest
 public class ConfigTest {
 
     @Autowired
